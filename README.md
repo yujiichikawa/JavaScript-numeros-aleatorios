@@ -1,2 +1,2 @@
-# JavaScript-numeros-aleatorios
+# JavaScript Números aleatorios
  
