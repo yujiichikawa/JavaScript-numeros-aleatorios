@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Números Aleatórios</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Tente acertar o numero</h1>
+    <h2>Escolha um numero de 0 a 10:</h2>
+    <div id="random">
+        <input type="number" class="txt01" id="txt01">
+        <input type="button" value="confirmar" id="botao">  
+    </div>
+    <p>Resultado</p>
+    <script>
+        var botao = document.getElementById('botao')
+        botao.addEventListener('click', result)
+        function result(){
+            var numsorteado = parseInt((Math.random()*10)+1)
+            var txt = document.getElementById('txt01')
+            var number = Number(txt.value)
+            var result = document.getElementsByTagName('p')[0]
+            if(number == numsorteado){
+                result.innerText = `Você acertou!`
+            }else if (number>numsorteado) {
+                result.innerText = `O número sorteado é menor`
+            }else if(number<numsorteado){
+                result.innerText = `O número sorteado é maior`
+            }
+        }
+    
+    </script>
+</body>
+</html>
