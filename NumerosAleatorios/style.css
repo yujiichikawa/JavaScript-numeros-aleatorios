@@ -17,7 +17,7 @@ p{
 }
 #botao:hover{
     opacity: 1.1;
-    /* cursor: pointer; */
+    cursor: pointer;
 }
 #random{
     max-width: 500px;
